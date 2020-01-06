@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CeluMobile</title>
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="img/logo.png" alt="" style="width: 7%;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto" >
+            <li class="nav-item active">
+              <a class="nav-link" href="#"> Acerca de </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Caracteristicas</a>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="#">Registrate</a>
+            </li>-->
+          </ul>
+        </div>
+    </div>
+      </nav>
+
+      <!--HEADER-->
+
+      <header class="main-header">
+          <div class="background-overlay text-white py-5">
+              <div class="container">
+                  <div class="row">
+                      </div>
+                      <div class="col-md-6">
+                          <img src="img/imagen prueba.png" alt="Imagen del producto" style="width: 100%; float: left;"
+                          class="img-fluid">
+                         <!--<div class="col-md-6 text-center">
+                          <h1>Este es un titulo o una frase relacionada al producto</h1>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, atque!</p>
+                          <a href="#" class="btn btn-outline-secondary btn-lg">
+                              Read More
+                          </a>-->
+                      </div>
+
+                      <form action="/" method="POST">
+                       
+                        <h2>CONTACTO</h2>
+                        <input type="text" name="Nombre" placeholder="Nombre">
+                        <input type="text" name="Apellido" placeholder="Apellido">
+                        <input type="email" name="Email" placeholder="Email">
+                        <input type="number" name="Teléfono" placeholder="Teléfono">
+                        <textarea name="mensaje" placeholder="Escriba aquí su mensaje">
+                        </textarea>
+                       <!-- <input type="checkbox" value="terminos" name="terminos" id="terminos"/>He leído y acepto las condiciones-->
+                        <div class="g-recaptcha" data-sitekey="6Lex68wUAAAAAKaoIqE13KoatmdjmOzRjadZz4s0"></div>
+                        <input type="button" value="ENVIAR" id="button">
+      
+                    </form>
+                   
+                      
+                  </div>
+
+              </div>
+           
+
+          </div>
+      </header>
+
+     <!-- <script>
+
+          var boton=document.getElementById("button");
+          boton.addEventListener("click",validarFormulario);
+          var general= false;
+        
+          function validarNombre(Nombre){
+              if(Nombre==""){
+                  alert("campo de nombre está vacío");
+                  general=false;
+              }
+          }
+          
+          function validarApellido(Apellido){
+              if(Apellido=="")
+              alert("campo de tipo Apellido no está lleno");
+              general=false;
+          }
+          
+          function validarEmail(Email){
+              if(Email=="")
+              alert("campo de email está vacío");
+              general=false;
+          }
+          
+          function validarTelefono(Teléfono){
+              if(Teléfono=="")
+              alert("campo de teléfono vacío");
+              general=false;
+          }
+          function validarTerminosYCondiciones(terminos){
+              if(!terminos){
+                  alert("campo de terminos está vacío");
+                  general=false;
+              }
+          }
+     
+          function validarFormulario(){
+              var Nombre=document.getElementById("Nombre").value;
+              var Apellido=document.getElementById("Apellido").value;
+              var Email=document.getElementById("Email").checked;
+              var Teléfono=document.getElementById("Teléfono").checked;
+              var terminos=document.getElementById("terminos").checked;
+          }
+      
+      
+  
+          validarNombre(Nombre);
+          validarApellido(Apellido);
+          validarEmail(Email);
+          validarTelefono(Teléfono);
+          validarTerminosYCondiciones(terminos);
+  
+          if(general== false){
+              alert("Formulario enviado");
+          } else{
+              alert("Formulario incorrecto");
+          }
+        }
+  
+  
+  
+       
+      </script>-->
+    
+
+    <!--BOOTSTRAP JAVASCRIP-->
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+</body>
+
+
+</html>
